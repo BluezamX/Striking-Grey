@@ -1,45 +1,45 @@
 NuvemaTown_MapScripts::
 	.byte 0
 
-NuvemaTown_WelcomeSign::
+NuvemaTown_EventScript_WelcomeSign::
 	msgbox NuvemaTown_Text_WelcomeSign, MSGBOX_SIGN
 	end
 
-NuvemaTown_Text_WelcomeSign::
+NuvemaTown_Text_WelcomeSign:
 	.string "Nuvema Town\n"
-	.string "A town where various dots gather"
+	.string "“A town where various dots gather.”$"
 
-NuvemaTown_BiancaSign::
+NuvemaTown_EventScript_BiancaSign::
 	msgbox NuvemaTown_Text_TownSign, MSGBOX_SIGN
 	end
 	
-NuvemaTown_Text_BiancaSign::
+NuvemaTown_Text_BiancaSign:
 	.string "Bianca's House"
 
-NuvemaTown_CherenSign::
+NuvemaTown_EventScript_CherenSign::
 	msgbox NuvemaTown_Text_TownSign, MSGBOX_SIGN
 	end
 	
-NuvemaTown_Text_CherenSign::
+NuvemaTown_Text_CherenSign:
 	.string "Cheren's House"
 
-NuvemaTown_HilbertSign::
+NuvemaTown_EventScript_HilbertSign::
 	msgbox NuvemaTown_Text_TownSign, MSGBOX_SIGN
 	end
 	
-NuvemaTown_Text_HilbertSign::
+NuvemaTown_Text_HilbertSign:
 	.string "Hilbert's House"
 
-NuvemaTown_LabSign::
+NuvemaTown_EventScript_LabSign::
 	msgbox NuvemaTown_Text_TownSign, MSGBOX_SIGN
 	end
 	
-NuvemaTown_Text_LabSign::
+NuvemaTown_Text_LabSign:
 	.string "Juniper Pokémon Lab"
 
-NuvemaTown_PlayerSign::
+NuvemaTown_EventScript_PlayerSign::
 	msgbox NuvemaTown_Text_TownSign, MSGBOX_SIGN
 	end
 	
-NuvemaTown_Text_PlayerSign::
+NuvemaTown_Text_PlayerSign:
 	.string "{PLAYER}'s House"

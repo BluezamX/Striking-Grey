@@ -35,7 +35,7 @@
       "y": 13,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "NuvemaTown_WelcomeSign"
+      "script": "NuvemaTown_EventScript_WelcomeSign"
     },
     {
       "type": "sign",
@@ -43,7 +43,7 @@
       "y": 14,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-      "script": "NuvemaTown_HilbertSign"
+      "script": "NuvemaTown_EventScript_HilbertSign"
     },
     {
       "type": "sign",
@@ -51,7 +51,7 @@
       "y": 19,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-      "script": "NuvemaTown_CherenSign"
+      "script": "NuvemaTown_EventScript_CherenSign"
     },
     {
       "type": "sign",
@@ -59,7 +59,7 @@
       "y": 19,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-      "script": "NuvemaTown_BiancaSign"
+      "script": "NuvemaTown_EventScript_BiancaSign"
     },
     {
       "type": "sign",
@@ -67,7 +67,7 @@
       "y": 6,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "NuvemaTown_LabSign"
+      "script": "NuvemaTown_EventScript_LabSign"
     },
     {
       "type": "sign",
@@ -75,7 +75,7 @@
       "y": 11,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-      "script": "NuvemaTown_PlayerSign"
+      "script": "NuvemaTown_EventScript_PlayerSign"
     }
   ]
 }
