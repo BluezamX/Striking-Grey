@@ -10,35 +10,35 @@ NuvemaTown_Text_WelcomeSign:
 	.string "“A town where various dots gather.”$"
 
 NuvemaTown_EventScript_BiancaSign::
-	msgbox NuvemaTown_Text_TownSign, MSGBOX_SIGN
+	msgbox NuvemaTown_Text_BiancaSign, MSGBOX_SIGN
 	end
 	
 NuvemaTown_Text_BiancaSign:
 	.string "Bianca's House"
 
 NuvemaTown_EventScript_CherenSign::
-	msgbox NuvemaTown_Text_TownSign, MSGBOX_SIGN
+	msgbox NuvemaTown_Text_CherenSign, MSGBOX_SIGN
 	end
 	
 NuvemaTown_Text_CherenSign:
 	.string "Cheren's House"
 
 NuvemaTown_EventScript_HilbertSign::
-	msgbox NuvemaTown_Text_TownSign, MSGBOX_SIGN
+	msgbox NuvemaTown_Text_HilbertSign, MSGBOX_SIGN
 	end
 	
 NuvemaTown_Text_HilbertSign:
 	.string "Hilbert's House"
 
 NuvemaTown_EventScript_LabSign::
-	msgbox NuvemaTown_Text_TownSign, MSGBOX_SIGN
+	msgbox NuvemaTown_Text_LabSign, MSGBOX_SIGN
 	end
 	
 NuvemaTown_Text_LabSign:
 	.string "Juniper Pokémon Lab"
 
 NuvemaTown_EventScript_PlayerSign::
-	msgbox NuvemaTown_Text_TownSign, MSGBOX_SIGN
+	msgbox NuvemaTown_Text_PlayerSign, MSGBOX_SIGN
 	end
 	
 NuvemaTown_Text_PlayerSign:
