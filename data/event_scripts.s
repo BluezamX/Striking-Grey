@@ -1153,3 +1153,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/text/birch_speech.inc"
 
 	.include "data/maps/NuvemaTown/scripts.inc"
+
+	.include "data/maps/NuvemaTown_PlayersHouse/scripts.inc"
+
+	.include "data/maps/NuvemaTown_PlayersHouse_2F/scripts.inc"
