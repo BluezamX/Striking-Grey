@@ -14,32 +14,32 @@ NuvemaTown_EventScript_BiancaSign::
 	end
 	
 NuvemaTown_Text_BiancaSign:
-	.string "Bianca's House"
+	.string "Bianca's House$"
 
 NuvemaTown_EventScript_CherenSign::
 	msgbox NuvemaTown_Text_CherenSign, MSGBOX_SIGN
 	end
 	
 NuvemaTown_Text_CherenSign:
-	.string "Cheren's House"
+	.string "Cheren's House$"
 
 NuvemaTown_EventScript_HilbertSign::
 	msgbox NuvemaTown_Text_HilbertSign, MSGBOX_SIGN
 	end
 	
 NuvemaTown_Text_HilbertSign:
-	.string "Hilbert's House"
+	.string "Hilbert's House$"
 
 NuvemaTown_EventScript_LabSign::
 	msgbox NuvemaTown_Text_LabSign, MSGBOX_SIGN
 	end
 	
 NuvemaTown_Text_LabSign:
-	.string "Juniper Pokémon Lab"
+	.string "Juniper Pokémon Lab$"
 
 NuvemaTown_EventScript_PlayerSign::
 	msgbox NuvemaTown_Text_PlayerSign, MSGBOX_SIGN
 	end
 	
 NuvemaTown_Text_PlayerSign:
-	.string "{PLAYER}'s House"
+	.string "{PLAYER}'s House$"
