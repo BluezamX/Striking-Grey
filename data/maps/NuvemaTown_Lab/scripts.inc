@@ -79,7 +79,7 @@ NuvemaTown_Lab_Text_Introduction4:
 	.string "Prof. Bianca: If you want, you can\n"
 	.string "rename your Pokémon in the Summary screen.$"
 
-NuvemaTown_Lab__EventScript_SivoSnivy::
+NuvemaTown_Lab_EventScript_SivoSnivy::
 	msgbox NuvemaTown_Lab_Text_SivoSnivy, MSGBOX_DEFAULT
 	call NuvemaTown_Lab_EventScript_BeforeBattle
 	end
@@ -87,7 +87,7 @@ NuvemaTown_Lab__EventScript_SivoSnivy::
 NuvemaTown_Lab_Text_SivoSnivy:
 	.string "Sivo: I'll take Tepig!$"
 
-NuvemaTown_Lab__EventScript_SivoTepig::
+NuvemaTown_Lab_EventScript_SivoTepig::
 	msgbox NuvemaTown_Lab_Text_SivoTepig, MSGBOX_DEFAULT
 	call NuvemaTown_Lab_EventScript_BeforeBattle
 	end
@@ -95,7 +95,7 @@ NuvemaTown_Lab__EventScript_SivoTepig::
 NuvemaTown_Lab_Text_SivoTepig:
 	.string "Sivo: I'll take Oshawott!$"
 
-NuvemaTown_Lab__EventScript_SivoOshawott::
+NuvemaTown_Lab_EventScript_SivoOshawott::
 	msgbox NuvemaTown_Lab_Text_SivoOshawott, MSGBOX_DEFAULT
 	call NuvemaTown_Lab_EventScript_BeforeBattle
 	end
