@@ -17,7 +17,7 @@ NuvemaTown_Lab_EventScript_BiancaGetStarter::
 	msgbox NuvemaTown_Lab_Text_Introduction1, MSGBOX_DEFAULT
 	turnobject LOCALID_SIVO, DIR_WEST
 	msgbox NuvemaTown_Lab_Text_Introduction2, MSGBOX_DEFAULT
-	applymovement LOCALID_SIVO, NuvemaTown_Lab_Movement_SivoExcited
+	applymovement LOCALID_SIVO, NuvemaTown_Lab_Movement_SivoExcitedWest
 	msgbox NuvemaTown_Lab_Text_SivoGreetings, MSGBOX_DEFAULT
 	turnobject LOCALID_SIVO, DIR_NORTH
 	msgbox NuvemaTown_Lab_Text_Introduction3, MSGBOX_DEFAULT
@@ -125,7 +125,7 @@ NuvemaTown_Lab_Text_Introduction5:
 	.string "battle, {PLAYER}!.\l"
 	.string "Prof. Bianca: No, not inside-$"
 
-NuvemaTown_Lab__EventScript_StartSivoBattleSnivy::
+NuvemaTown_Lab_EventScript_StartSivoBattleSnivy::
 	trainerbattle_no_intro TRAINER_SIVO_NUVEMATOWN_LAB_SNIVY, NuvemaTown_Lab_SivoDefeated
 	goto NuvemaTown_Lab_EventScript_AfterRivalBattle
 	end
