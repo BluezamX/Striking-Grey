@@ -19,6 +19,7 @@ NuvemaTown_Lab_EventScript_BiancaGetStarter::
 	msgbox NuvemaTown_Lab_Text_Introduction2, MSGBOX_DEFAULT
 	applymovement LOCALID_SIVO, NuvemaTown_Lab_Movement_SivoExcitedWest
 	msgbox NuvemaTown_Lab_Text_SivoGreetings, MSGBOX_DEFAULT
+	turnobject LOCALID_SIVO, DIR_NORTH
 	msgbox NuvemaTown_Lab_Text_Introduction3, MSGBOX_DEFAULT
 	setflag FLAG_SYS_POKEMON_GET
 	fadescreen FADE_TO_BLACK
@@ -77,7 +78,8 @@ NuvemaTown_Lab_Text_Introduction3:
 	
 NuvemaTown_Lab_Text_Introduction4:
 	.string "Prof. Bianca: If you want, you can\n"
-	.string "rename your Pokémon in the Summary screen.$"
+	.string "rename your Pokémon in the\l"
+	.string "Summary screen.$"
 
 NuvemaTown_Lab_EventScript_SivoSnivy::
 	msgbox NuvemaTown_Lab_Text_SivoSnivy, MSGBOX_DEFAULT
@@ -105,7 +107,6 @@ NuvemaTown_Lab_Text_SivoOshawott:
 
 NuvemaTown_Lab_EventScript_BeforeBattle::
 	applymovement LOCALID_SIVO, NuvemaTown_Lab_Movement_SivoExcitedNorth
-	turnobject LOCALID_SIVO, DIR_WEST
 	msgbox NuvemaTown_Lab_Text_Introduction5, MSGBOX_DEFAULT
 	switch VAR_STARTER_MON
 	case 0, NuvemaTown_Lab_EventScript_StartSivoBattleSnivy
@@ -118,6 +119,7 @@ NuvemaTown_Lab_Movement_SivoExcitedNorth:
 	walk_in_place_faster_up
 	walk_in_place_faster_up
 	walk_in_place_faster_up
+	walk_in_place_faster_left
 	step_end
 
 NuvemaTown_Lab_Text_Introduction5:
