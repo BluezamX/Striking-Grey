@@ -25,18 +25,18 @@ NuvemaTown_Lab_EventScript_BiancaGetStarter::
 	end
 
 NuvemaTown_Lab_Text_Introduction1:
-	.string "Prof. Bianca: Ah, {PLAYER}!\l"
-	.string "I'm glad you're here.\l"
-	.string "As you know, today is the big day.\n"
-	.string "You'll finally embark on your\l"
-	.string "adventure.\n"
+	.string "Prof. Bianca: Ah, {PLAYER}!\n"
+	.string "I'm glad you're here.\n"
+	.string "As you know, today is the big day.\l"
+	.string "You'll finally embark on your\n"
+	.string "adventure.\l"
 	.string "However, you won't be doing it alone!$"
 
 NuvemaTown_Lab_Text_Introduction2:
-	.string "Prof. Bianca: This is Sivo, the son of\l"
+	.string "Prof. Bianca: This is Sivo, the son of\n"
 	.string "Gym Leader Cheren.\l"
-	.string "It came as a surprise to me, but\l"
-	.string "Cheren has sent him here to leave on\l"
+	.string "It came as a surprise to me, but\n"
+	.string "Cheren has sent him here to leave on\n"
 	.string "his very own journey, just like you.$"
 
 NuvemaTown_Lab_Movement_SivoExcited:
@@ -45,24 +45,25 @@ NuvemaTown_Lab_Movement_SivoExcited:
 	step_end
 
 NuvemaTown_Lab_Text_SivoGreetings:
-	.string "Sivo: Nice to meet you, {PLAYER}.\n"
-	.string "I grew up with my father's stories\l"
-	.string "of how he fought bad guys and traveled\l"
-	.string "Unova. I can't wait to forge my own\l"
+	.string "Sivo: Nice to meet you, {PLAYER}.\l"
+	.string "I grew up with my father's stories\n"
+	.string "of how he fought bad guys and traveled\n"
+	.string "Unova. I can't wait to forge my own\n"
 	.string "destiny!$"
 	
 NuvemaTown_Lab_Text_Introduction3:
 	.string "Prof. Bianca: Very well said, Sivo!\l"
-	.string "Your father and I really had a big\l"
-	.string "adventure, along with our friend Hilbert...\n"
-	.string "Now, before I'll let you choose your very\l"
-	.string "first Pokémon, I have one more thing\l"
-	.string "to say. Never forget that you two are on\l"
-	.string "this journey together.\n"
-	.string "You need to be there for each other as\l"
-	.string "friends and rivals to each get the\l"
-	.string "most out of this experience of a lifetime!\n"
-	.string "Now, {PLAYER}, who will you pick as your\l"
+	.string "Your father and I really had a big\n"
+	.string "adventure, along with our friend\n"
+	.string "Hilbert...\l"
+	.string "Now, before I'll let you choose your\n"
+	.string "very first Pokémon, I have one more\n"
+	.string "thing to say. Never forget that you two\n"
+	.string "are on this journey together.\l"
+	.string "You need to be there for each other as\n"
+	.string "friends and rivals to each get the\n"
+	.string "most out of this experience of a lifetime!\l"
+	.string "Now, {PLAYER}, who will you pick as your\n"
 	.string "very first Pokémon partner?$"
 
 NuvemaTown_Lab_EventScript_BiancaAfterGetStarter::
@@ -73,10 +74,10 @@ NuvemaTown_Lab_EventScript_BiancaAfterGetStarter::
 	end
 
 NuvemaTown_Lab_Text_BiancaAfterGetStarter:
-	.string "Seeing you head out into the world\l"
-	.string "brings back so many memories...\n"
-	.string "If I can give you one piece of advice:\l"
-	.string "It's important to listen to others,\l"
+	.string "Seeing you head out into the world\n"
+	.string "brings back so many memories...\l"
+	.string "If I can give you one piece of advice:\n"
+	.string "It's important to listen to others,\n"
 	.string "But you alone can choose your path!$"
 
 NuvemaTown_Lab_EventScript_Sivo::
@@ -111,6 +112,6 @@ NuvemaTown_Lab_EventScript_Aide2::
 	end
 
 NuvemaTown_Lab_Text_Aide2:
-	.string "I heard Professor Bianca's father\l"
-	.string "used to be quite tough on her.\n"
+	.string "I heard Professor Bianca's father\n"
+	.string "used to be quite tough on her.\l"
 	.string "Nowadays their bond is great, however!$"
