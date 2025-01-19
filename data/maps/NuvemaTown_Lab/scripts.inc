@@ -62,8 +62,8 @@ NuvemaTown_Lab_Movement_SivoExcitedWest:
 
 NuvemaTown_Lab_Text_SivoGreetings:
 	.string "Sivo: Nice to meet you, {PLAYER}.\p"
-	.string "I grew up with my father's stories\n"
-	.string "of how he fought bad guys across Unova.\l"
+	.string "I grew up with my father's stories of\n"
+	.string "how he fought bad guys across Unova.\l"
 	.string "I can't wait to forge my own destiny!$"
 	
 NuvemaTown_Lab_Text_Introduction3:
@@ -71,7 +71,7 @@ NuvemaTown_Lab_Text_Introduction3:
 	.string "Your father and I had a big adventure\n"
 	.string "along with our friend Hilbert...\p"
 	.string "Even though it's been 20 years,\n"
-	.string "it doesn't feel like that long ago!\p"
+	.string "it doesn't feel like that long ago!$"
 
 NuvemaTown_Lab_Movement_BiancaExcitedSouth:
 	walk_in_place_faster_down
