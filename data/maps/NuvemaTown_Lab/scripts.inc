@@ -19,15 +19,19 @@ NuvemaTown_Lab_EventScript_BiancaGetStarter::
 	msgbox NuvemaTown_Lab_Text_Introduction2, MSGBOX_DEFAULT
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_EAST
 	applymovement LOCALID_SIVO, NuvemaTown_Lab_Movement_SivoExcitedWest
+	waitmovement 0
 	msgbox NuvemaTown_Lab_Text_SivoGreetings, MSGBOX_DEFAULT
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
 	turnobject LOCALID_SIVO, DIR_NORTH
 	msgbox NuvemaTown_Lab_Text_Introduction3, MSGBOX_DEFAULT
+	applymovement LOCALID_BIANCA, NuvemaTown_Lab_Movement_BiancaExcitedSouth
+	waitmovement 0
+	msgbox NuvemaTown_Lab_Text_Introduction4, MSGBOX_DEFAULT
 	setflag FLAG_SYS_POKEMON_GET
 	fadescreen FADE_TO_BLACK
 	special ChooseStarter
 	waitstate
-	msgbox NuvemaTown_Lab_Text_Introduction4, MSGBOX_DEFAULT
+	msgbox NuvemaTown_Lab_Text_Introduction5, MSGBOX_DEFAULT
 	switch VAR_STARTER_MON
 	case 0, NuvemaTown_Lab_EventScript_SivoSnivy
 	case 1, NuvemaTown_Lab_EventScript_SivoTepig
@@ -54,7 +58,6 @@ NuvemaTown_Lab_Text_Introduction2:
 NuvemaTown_Lab_Movement_SivoExcitedWest:
 	walk_in_place_faster_left
 	walk_in_place_faster_left
-	walk_in_place_faster_left
 	step_end
 
 NuvemaTown_Lab_Text_SivoGreetings:
@@ -67,20 +70,30 @@ NuvemaTown_Lab_Text_Introduction3:
 	.string "Prof. Bianca: Very well said, Sivo!\p"
 	.string "Your father and I had a big adventure\n"
 	.string "along with our friend Hilbert...\p"
-	.string "I have one more thing to say before\n"
-	.string "you get to pick your very first Pokémon.\p"
+	.string "Even though it's been 20 years,\n"
+	.string "it doesn't feel like that long ago!\p"
+
+NuvemaTown_Lab_Movement_BiancaExcitedSouth:
+	walk_in_place_faster_down
+	walk_in_place_faster_down
+	step_end
+
+NuvemaTown_Lab_Text_Introduction4:
+	.string "Prof. Bianca: I have one more thing to say\n"
+	.string "before you get to pick your very first\l"
+	.string "Pokémon.\p"
 	.string "Never forget that you two are on\n"
 	.string "this journey together.\p"
 	.string "You need to be there for each other as\n"
 	.string "both friends and rivals.\p"
-	.string "That way, you'll get the most out\n"
-	.string "of this experience of a lifetime!\p"
+	.string "That way, you'll get the most out of\n"
+	.string "this experience of a lifetime!\p"
 	.string "Now, {PLAYER}, who will you pick as your\n"
 	.string "very first Pokémon partner?$"
 	
-NuvemaTown_Lab_Text_Introduction4:
+NuvemaTown_Lab_Text_Introduction5:
 	.string "Prof. Bianca: If you want, you can\n"
-	.string "rename your Pokémon in the\l"
+	.string "give your Pokémon a nickname in the\l"
 	.string "Summary screen.$"
 
 NuvemaTown_Lab_EventScript_SivoSnivy::
@@ -112,7 +125,7 @@ NuvemaTown_Lab_EventScript_BeforeBattle::
 	waitmovement 0
 	turnobject LOCALID_SIVO, DIR_WEST
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_EAST
-	msgbox NuvemaTown_Lab_Text_Introduction5, MSGBOX_DEFAULT
+	msgbox NuvemaTown_Lab_Text_Introduction6, MSGBOX_DEFAULT
 	switch VAR_STARTER_MON
 	case 0, NuvemaTown_Lab_EventScript_StartSivoBattleSnivy
 	case 1, NuvemaTown_Lab_EventScript_StartSivoBattleTepig
@@ -123,10 +136,9 @@ NuvemaTown_Lab_EventScript_BeforeBattle::
 NuvemaTown_Lab_Movement_SivoExcitedNorth:
 	walk_in_place_faster_up
 	walk_in_place_faster_up
-	walk_in_place_faster_up
 	step_end
 
-NuvemaTown_Lab_Text_Introduction5:
+NuvemaTown_Lab_Text_Introduction6:
 	.string "Sivo: Now, let's have our very first\n"
 	.string "Pokémon battle, {PLAYER}!.\l"
 	.string "Prof. Bianca: No, not inside-$"
@@ -153,21 +165,22 @@ NuvemaTown_Lab_SivoDefeated:
 NuvemaTown_Lab_EventScript_AfterRivalBattle::
 	lock
 	faceplayer
-	msgbox NuvemaTown_Lab_Text_Introduction6, MSGBOX_DEFAULT
-	turnobject LOCALID_SIVO, DIR_NORTH
 	msgbox NuvemaTown_Lab_Text_Introduction7, MSGBOX_DEFAULT
-	applymovement LOCALID_SIVO, NuvemaTown_Lab_Movement_SivoLeaves
-	setflag FLAG_NUVEMATOWN_LAB_INTRODUCTION
+	turnobject LOCALID_SIVO, DIR_NORTH
 	msgbox NuvemaTown_Lab_Text_Introduction8, MSGBOX_DEFAULT
+	applymovement LOCALID_SIVO, NuvemaTown_Lab_Movement_SivoLeaves
+	removeobject LOCALID_SIVO
+	setflag FLAG_NUVEMATOWN_LAB_INTRODUCTION
+	msgbox NuvemaTown_Lab_Text_Introduction9, MSGBOX_DEFAULT
 	release
 	end
 
-NuvemaTown_Lab_Text_Introduction6:
+NuvemaTown_Lab_Text_Introduction7:
 	.string "Prof. Bianca: -the lab...\l"
 	.string "Sivo: Next time, I'll beat you\n"
 	.string "for sure, {PLAYER}!$"
 
-NuvemaTown_Lab_Text_Introduction7:
+NuvemaTown_Lab_Text_Introduction8:
 	.string "Sivo: Thank you very much, professor\n"
 	.string "Bianca!\p"
 	.string "I have to go train and become strong\n"
@@ -183,7 +196,7 @@ NuvemaTown_Lab_Movement_SivoLeaves:
 	walk_down
 	step_end
 
-NuvemaTown_Lab_Text_Introduction8:
+NuvemaTown_Lab_Text_Introduction9:
 	.string "Prof. Bianca: Headstrong and fierce,\n"
 	.string "just like his father...\p"
 	.string "{PLAYER}! I recommend you head over to\n"
