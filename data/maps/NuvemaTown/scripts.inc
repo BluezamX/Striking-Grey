@@ -47,7 +47,7 @@ NuvemaTown_Text_PlayerSign:
 	.string "{PLAYER}'s House$"
 
 NuvemaTown_EventScript_HilbertDoor::
-	msbox NuvemaTown_Text_HilbertDoor, MSBOX_SIGN
+	msgbox NuvemaTown_Text_HilbertDoor, MSBOX_SIGN
 	end
 
 NuvemaTown_Text_HilbertDoor:
