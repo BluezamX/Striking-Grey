@@ -102,7 +102,12 @@
     "LittlerootTown_MaysHouse_2F",
     "LittlerootTown_ProfessorBirchsLab",
     "NuvemaTown_PlayersHouse",
-    "NuvemaTown_PlayersHouse_2F"
+    "NuvemaTown_PlayersHouse_2F",
+    "NuvemaTown_CherensHouse",
+    "NuvemaTown_BiancasHouse",
+    "NuvemaTown_CherensHouse_2F",
+    "NuvemaTown_BiancasHouse_2F",
+    "NuvemaTown_Lab"
   ],
   "gMapGroup_IndoorOldale": [
     "OldaleTown_House1",

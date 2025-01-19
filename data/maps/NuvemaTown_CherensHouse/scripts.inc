@@ -1,0 +1,2 @@
+NuvemaTown_CherensHouse_MapScripts::
+	.byte 0

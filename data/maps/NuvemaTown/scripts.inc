@@ -1,6 +1,8 @@
 NuvemaTown_MapScripts::
 	.byte 0
 
+
+
 NuvemaTown_EventScript_WelcomeSign::
 	msgbox NuvemaTown_Text_WelcomeSign, MSGBOX_SIGN
 	end
@@ -43,3 +45,10 @@ NuvemaTown_EventScript_PlayerSign::
 	
 NuvemaTown_Text_PlayerSign:
 	.string "{PLAYER}'s House$"
+
+NuvemaTown_EventScript_HilbertDoor::
+	msbox NuvemaTown_Text_HilbertDoor
+	end
+
+NuvemaTown_Text_HilbertDoor:
+	.string "The door is locked.$"
