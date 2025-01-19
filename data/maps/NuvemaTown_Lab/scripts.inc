@@ -19,7 +19,6 @@ NuvemaTown_Lab_EventScript_BiancaGetStarter::
 	msgbox NuvemaTown_Lab_Text_Introduction2, MSGBOX_DEFAULT
 	applymovement LOCALID_SIVO, NuvemaTown_Lab_Movement_SivoExcitedWest
 	msgbox NuvemaTown_Lab_Text_SivoGreetings, MSGBOX_DEFAULT
-	turnobject LOCALID_SIVO, DIR_NORTH
 	msgbox NuvemaTown_Lab_Text_Introduction3, MSGBOX_DEFAULT
 	setflag FLAG_SYS_POKEMON_GET
 	fadescreen FADE_TO_BLACK
@@ -34,7 +33,7 @@ NuvemaTown_Lab_EventScript_BiancaGetStarter::
 
 NuvemaTown_Lab_Text_Introduction1:
 	.string "Prof. Bianca: Ah, {PLAYER}!\n"
-	.string "I'm glad you're here.\n"
+	.string "I'm glad you're here.\l"
 	.string "As you know, today is the big day.\l"
 	.string "You'll finally embark on your\n"
 	.string "adventure.\l"
@@ -42,10 +41,11 @@ NuvemaTown_Lab_Text_Introduction1:
 
 NuvemaTown_Lab_Text_Introduction2:
 	.string "Prof. Bianca: This is Sivo, the son of\n"
-	.string "Gym Leader Cheren.\l"
+	.string "Gym Leader Cheren. He arrived just now.\l"
 	.string "It came as a surprise to me, but\n"
-	.string "Cheren has sent him here to leave on\n"
-	.string "his very own journey, just like you.$"
+	.string "Cheren has sent him here.\l"
+	.string "He thought it would be fitting for his\n"
+	.string "son to start his journey in Nuvema Town.$"
 
 NuvemaTown_Lab_Movement_SivoExcitedWest:
 	walk_in_place_faster_left
@@ -56,22 +56,21 @@ NuvemaTown_Lab_Movement_SivoExcitedWest:
 NuvemaTown_Lab_Text_SivoGreetings:
 	.string "Sivo: Nice to meet you, {PLAYER}.\l"
 	.string "I grew up with my father's stories\n"
-	.string "of how he fought bad guys and traveled\n"
-	.string "Unova. I can't wait to forge my own\n"
-	.string "destiny!$"
+	.string "of how he fought bad guys across Unova\l"
+	.string "I can't wait to forge my own destiny!$"
 	
 NuvemaTown_Lab_Text_Introduction3:
 	.string "Prof. Bianca: Very well said, Sivo!\l"
-	.string "Your father and I really had a big\n"
-	.string "adventure, along with our friend\n"
-	.string "Hilbert...\l"
-	.string "Now, before I'll let you choose your\n"
-	.string "very first Pokémon, I have one more\n"
-	.string "thing to say. Never forget that you two\n"
+	.string "Your father and I had a big adventure\n"
+	.string "along with our friend Hilbert...\l"
+	.string "I have one more thing to say before\n"
+	.string "you get to pick your very first Pokémon.\l"
+	.string "Never forget that you two\n"
 	.string "are on this journey together.\l"
 	.string "You need to be there for each other as\n"
-	.string "friends and rivals to each get the\n"
-	.string "most out of this experience of a lifetime!\l"
+	.string "both friends and rivals.\l"
+	.string "That way, you'll get the most out\n"
+	.string "of this experience of a lifetime!\l"
 	.string "Now, {PLAYER}, who will you pick as your\n"
 	.string "very first Pokémon partner?$"
 	
@@ -163,9 +162,9 @@ NuvemaTown_Lab_Text_Introduction6:
 
 NuvemaTown_Lab_Text_Introduction7:
 	.string "Sivo: Thank you very much, professor\n"
-	.string "Bianca! I have to go train and become\n"
-	.string "strong enough to earn my first!\n"
-	.string "Gym Badge!$"
+	.string "Bianca!\l"
+	.string "I have to go train and become strong\n"
+	.string "enough to earn my first Gym Badge!$"
 	
 NuvemaTown_Lab_Movement_SivoLeaves:
 	walk_down
@@ -181,8 +180,9 @@ NuvemaTown_Lab_Text_Introduction8:
 	.string "Prof. Bianca: Headstrong and fierce,\n"
 	.string "just like his father...\l"
 	.string "{PLAYER}! I recommend you head over to\n"
-	.string "Striaton City, where you'll be able\n"
-	.string "to earn your very first Gym Badge!$"
+	.string "Striaton City.\l"
+	.string "There, you'll be ableto earn\n"
+	.string "your very first Gym Badge!$"
 
 NuvemaTown_Lab_EventScript_BiancaAfterGetStarter::
 	lock
@@ -194,7 +194,7 @@ NuvemaTown_Lab_EventScript_BiancaAfterGetStarter::
 NuvemaTown_Lab_Text_BiancaAfterGetStarter:
 	.string "Seeing you head out into the world\n"
 	.string "brings back so many memories...\l"
-	.string "If I can give you one piece of advice:\n"
+	.string "If I can give you one piece of advice:\l"
 	.string "It's important to listen to others,\n"
 	.string "But you alone can choose your path!$"
 
