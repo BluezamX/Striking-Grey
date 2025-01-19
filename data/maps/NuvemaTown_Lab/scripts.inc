@@ -7,13 +7,13 @@ NuvemaTown_Lab_MapScripts::
 	.byte 0
 
 NuvemaTown_Lab_EventScript_Bianca::
+	lock
+	faceplayer
 	goto_if_unset FLAG_NUVEMATOWN_LAB_INTRODUCTION NuvemaTown_Lab_EventScript_BiancaGetStarter
 	goto_if_set FLAG_NUVEMATOWN_LAB_INTRODUCTION NuvemaTown_Lab_EventScript_BiancaAfterGetStarter
 	end
 
 NuvemaTown_Lab_EventScript_BiancaGetStarter::
-	lock
-	faceplayer
 	msgbox NuvemaTown_Lab_Text_Introduction1, MSGBOX_DEFAULT
 	turnobject LOCALID_SIVO, DIR_WEST
 	msgbox NuvemaTown_Lab_Text_Introduction2, MSGBOX_DEFAULT
@@ -79,9 +79,9 @@ NuvemaTown_Lab_Movement_BiancaExcitedSouth:
 	step_end
 
 NuvemaTown_Lab_Text_Introduction4:
-	.string "Prof. Bianca: I have one more thing to say\n"
-	.string "before you get to pick your very first\l"
-	.string "Pokémon.\p"
+	.string "Prof. Bianca: I have one more thing to\n"
+	.string "saybefore you get to pick your very\l"
+	.string "first Pokémon.\p"
 	.string "Never forget that you two are on\n"
 	.string "this journey together.\p"
 	.string "You need to be there for each other as\n"
@@ -140,7 +140,7 @@ NuvemaTown_Lab_Movement_SivoExcitedNorth:
 
 NuvemaTown_Lab_Text_Introduction6:
 	.string "Sivo: Now, let's have our very first\n"
-	.string "Pokémon battle, {PLAYER}!.\l"
+	.string "Pokémon battle, {PLAYER}!\l"
 	.string "Prof. Bianca: No, not inside-$"
 
 NuvemaTown_Lab_EventScript_StartSivoBattleSnivy::
@@ -163,12 +163,11 @@ NuvemaTown_Lab_SivoDefeated:
 	.string "{PLAYER}, you're a really good trainer!$"
 
 NuvemaTown_Lab_EventScript_AfterRivalBattle::
-	lock
-	faceplayer
 	msgbox NuvemaTown_Lab_Text_Introduction7, MSGBOX_DEFAULT
 	turnobject LOCALID_SIVO, DIR_NORTH
 	msgbox NuvemaTown_Lab_Text_Introduction8, MSGBOX_DEFAULT
 	applymovement LOCALID_SIVO, NuvemaTown_Lab_Movement_SivoLeaves
+	waitmovement 0
 	removeobject LOCALID_SIVO
 	setflag FLAG_NUVEMATOWN_LAB_INTRODUCTION
 	msgbox NuvemaTown_Lab_Text_Introduction9, MSGBOX_DEFAULT
