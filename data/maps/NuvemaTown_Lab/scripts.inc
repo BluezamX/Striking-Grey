@@ -165,6 +165,7 @@ NuvemaTown_Lab_SivoDefeated:
 NuvemaTown_Lab_EventScript_AfterRivalBattle::
 	msgbox NuvemaTown_Lab_Text_Introduction7, MSGBOX_DEFAULT
 	turnobject LOCALID_SIVO, DIR_NORTH
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
 	applymovement LOCALID_SIVO, NuvemaTown_Lab_Movement_SivoExcitedNorth
 	waitmovement 0
 	msgbox NuvemaTown_Lab_Text_GivePokedex, MSGBOX_DEFAULT
@@ -172,6 +173,7 @@ NuvemaTown_Lab_EventScript_AfterRivalBattle::
 	applymovement LOCALID_SIVO, NuvemaTown_Lab_Movement_SivoExcitedNorth
 	msgbox NuvemaTown_Lab_Text_Introduction8, MSGBOX_DEFAULT
 	closemessage
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_SOUTH
 	applymovement LOCALID_SIVO, NuvemaTown_Lab_Movement_SivoLeaves
 	waitmovement 0
 	removeobject LOCALID_SIVO
@@ -217,8 +219,9 @@ NuvemaTown_Lab_EventScript_ReceivePokedex::
 	waitfanfare
 	waitmessage
 	closemessage
-	applymovement LOCALID_BIRCH, NuvemaTown_Lab_Movement_BiancaWalkToSivo
+	applymovement LOCALID_BIANCA, NuvemaTown_Lab_Movement_BiancaWalkToSivo
 	waitmovement 0
+	turnobject LOCALID_BIANCA, DIR_SOUTH
 	return
 
 NuvemaTown_Lab_Movement_BiancaWalkToSivo:
