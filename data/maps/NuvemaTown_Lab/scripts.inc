@@ -80,7 +80,7 @@ NuvemaTown_Lab_Movement_BiancaExcitedSouth:
 
 NuvemaTown_Lab_Text_Introduction4:
 	.string "Prof. Bianca: I have one more thing to\n"
-	.string "saybefore you get to pick your very\l"
+	.string "say before you get to pick your very\l"
 	.string "first Pokémon.\p"
 	.string "Never forget that you two are on\n"
 	.string "this journey together.\p"
@@ -165,11 +165,18 @@ NuvemaTown_Lab_SivoDefeated:
 NuvemaTown_Lab_EventScript_AfterRivalBattle::
 	msgbox NuvemaTown_Lab_Text_Introduction7, MSGBOX_DEFAULT
 	turnobject LOCALID_SIVO, DIR_NORTH
+	applymovement LOCALID_SIVO, NuvemaTown_Lab_Movement_SivoExcitedNorth
+	waitmovement 0
+	msgbox NuvemaTown_Lab_Text_GivePokedex, MSGBOX_DEFAULT
+	call NuvemaTown_Lab_EventScript_ReceivePokedex
+	applymovement LOCALID_SIVO, NuvemaTown_Lab_Movement_SivoExcitedNorth
 	msgbox NuvemaTown_Lab_Text_Introduction8, MSGBOX_DEFAULT
+	closemessage
 	applymovement LOCALID_SIVO, NuvemaTown_Lab_Movement_SivoLeaves
 	waitmovement 0
 	removeobject LOCALID_SIVO
 	setflag FLAG_NUVEMATOWN_LAB_INTRODUCTION
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
 	msgbox NuvemaTown_Lab_Text_Introduction9, MSGBOX_DEFAULT
 	release
 	end
@@ -177,7 +184,52 @@ NuvemaTown_Lab_EventScript_AfterRivalBattle::
 NuvemaTown_Lab_Text_Introduction7:
 	.string "Prof. Bianca: -the lab...\l"
 	.string "Sivo: Next time, I'll beat you\n"
-	.string "for sure, {PLAYER}!$"
+	.string "for sure, {PLAYER}!\p"
+	.string "Prof. Bianca: Next time, don't have\n"
+	.string "Pokémon battles indoors! They can\l"
+	.string "get very messy.$"
+
+NuvemaTown_Lab_Text_GivePokedex:
+	.string "Sivo: Sorry, professor!\l"
+	.string "Prof. Bianca: That's alright. You're\n"
+	.string "both great trainers already!\p"
+	.string "Before you go, I have one more thing\n"
+	.string "for you. It's a Pokédex, a device that\l"
+	.string "records info on all Pokémon you see!\p"
+	.string "It can tell you lots of stuff about\n"
+	.string "Pokémon from the moment you see them.\p"
+	.string "To really get in-depth info, you'll\n"
+	.string "have to catch them, however.\p"
+	.string "Some trainers even make it their\n"
+	.string "mission to catch all of the Pokémon in\l"
+	.string "the Pokédex!$"
+
+NuvemaTown_Lab_EventScript_ReceivePokedex::
+	playfanfare MUS_OBTAIN_ITEM
+	message NuvemaTown_Lab_Text_ReceivedPokedex
+	waitfanfare
+	setflag FLAG_SYS_POKEDEX_GET
+	special SetUnlockedPokedexFlags
+	setflag FLAG_RECEIVED_POKEDEX_FROM_BIRCH
+	playfanfare MUS_OBTAIN_ITEM
+	message NuvemaTown_Lab_Text_ReceivedPokeballs
+	giveitem ITEM_POKE_BALL, 5
+	waitfanfare
+	waitmessage
+	closemessage
+	applymovement LOCALID_BIRCH, NuvemaTown_Lab_Movement_BiancaWalkToSivo
+	waitmovement
+	return
+
+NuvemaTown_Lab_Movement_BiancaWalkToSivo:
+	walk_right
+	step_end
+
+NuvemaTown_Lab_Text_ReceivedPokedex:
+	.string "{PLAYER} received the Pokédex!$"
+
+NuvemaTown_Lab_Text_ReceivedPokeballs:
+	.string "{PLAYER} received 5 Pokéballs!$"
 
 NuvemaTown_Lab_Text_Introduction8:
 	.string "Sivo: Thank you very much, professor\n"
@@ -200,7 +252,7 @@ NuvemaTown_Lab_Text_Introduction9:
 	.string "just like his father...\p"
 	.string "{PLAYER}! I recommend you head over to\n"
 	.string "Striaton City.\p"
-	.string "There, you'll be ableto earn\n"
+	.string "There, you'll be able to earn\n"
 	.string "your very first Gym Badge!$"
 
 NuvemaTown_Lab_EventScript_BiancaAfterGetStarter::
