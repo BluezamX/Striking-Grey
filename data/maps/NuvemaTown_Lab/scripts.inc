@@ -218,7 +218,7 @@ NuvemaTown_Lab_EventScript_ReceivePokedex::
 	waitmessage
 	closemessage
 	applymovement LOCALID_BIRCH, NuvemaTown_Lab_Movement_BiancaWalkToSivo
-	waitmovement
+	waitmovement 0
 	return
 
 NuvemaTown_Lab_Movement_BiancaWalkToSivo:
