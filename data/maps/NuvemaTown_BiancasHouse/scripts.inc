@@ -13,12 +13,12 @@ NuvemaTown_BiancasHouse_Text_Husband:
 	.string "You're finally headed out on your\l"
 	.string "adventure.\p"
 	.string "Just know that my dear Bianca\n"
-	.string "is always here to help you!$"
+	.string "will always be here to help you!$"
 
 NuvemaTown_BiancasHouse_EventScript_Upstairs::
 	lock
 	msgbox NuvemaTown_BiancasHouse_Text_Upstairs, MSGBOX_DEFAULT
-	applymovement OBJ_EVENT_ID_PLAYER, NuvemaTown_BiancasHouse_Movement_South
+	applymovement LOCALID_PLAYER, NuvemaTown_BiancasHouse_Movement_South
 	release
 	end
 

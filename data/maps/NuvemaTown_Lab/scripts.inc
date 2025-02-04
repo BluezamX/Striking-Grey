@@ -17,11 +17,11 @@ NuvemaTown_Lab_EventScript_BiancaGetStarter::
 	msgbox NuvemaTown_Lab_Text_Introduction1, MSGBOX_DEFAULT
 	turnobject LOCALID_SIVO, DIR_WEST
 	msgbox NuvemaTown_Lab_Text_Introduction2, MSGBOX_DEFAULT
-	turnobject OBJ_EVENT_ID_PLAYER, DIR_EAST
+	turnobject LOCALID_PLAYER, DIR_EAST
 	applymovement LOCALID_SIVO, NuvemaTown_Lab_Movement_SivoExcitedWest
 	waitmovement 0
 	msgbox NuvemaTown_Lab_Text_SivoGreetings, MSGBOX_DEFAULT
-	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
+	turnobject LOCALID_PLAYER, DIR_NORTH
 	turnobject LOCALID_SIVO, DIR_NORTH
 	msgbox NuvemaTown_Lab_Text_Introduction3, MSGBOX_DEFAULT
 	applymovement LOCALID_BIANCA, NuvemaTown_Lab_Movement_BiancaExcitedSouth
@@ -124,7 +124,7 @@ NuvemaTown_Lab_EventScript_BeforeBattle::
 	applymovement LOCALID_SIVO, NuvemaTown_Lab_Movement_SivoExcitedNorth
 	waitmovement 0
 	turnobject LOCALID_SIVO, DIR_WEST
-	turnobject OBJ_EVENT_ID_PLAYER, DIR_EAST
+	turnobject LOCALID_PLAYER, DIR_EAST
 	msgbox NuvemaTown_Lab_Text_Introduction6, MSGBOX_DEFAULT
 	switch VAR_STARTER_MON
 	case 0, NuvemaTown_Lab_EventScript_StartSivoBattleSnivy
@@ -165,7 +165,7 @@ NuvemaTown_Lab_SivoDefeated:
 NuvemaTown_Lab_EventScript_AfterRivalBattle::
 	msgbox NuvemaTown_Lab_Text_Introduction7, MSGBOX_DEFAULT
 	turnobject LOCALID_SIVO, DIR_NORTH
-	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
+	turnobject LOCALID_PLAYER, DIR_NORTH
 	applymovement LOCALID_SIVO, NuvemaTown_Lab_Movement_SivoExcitedNorth
 	waitmovement 0
 	msgbox NuvemaTown_Lab_Text_GivePokedex, MSGBOX_DEFAULT
@@ -173,12 +173,12 @@ NuvemaTown_Lab_EventScript_AfterRivalBattle::
 	applymovement LOCALID_SIVO, NuvemaTown_Lab_Movement_SivoExcitedNorth
 	msgbox NuvemaTown_Lab_Text_Introduction8, MSGBOX_DEFAULT
 	closemessage
-	turnobject OBJ_EVENT_ID_PLAYER, DIR_SOUTH
+	turnobject LOCALID_PLAYER, DIR_SOUTH
 	applymovement LOCALID_SIVO, NuvemaTown_Lab_Movement_SivoLeaves
 	waitmovement 0
 	removeobject LOCALID_SIVO
 	setflag FLAG_NUVEMATOWN_LAB_INTRODUCTION
-	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
+	turnobject LOCALID_PLAYER, DIR_NORTH
 	msgbox NuvemaTown_Lab_Text_Introduction9, MSGBOX_DEFAULT
 	release
 	end

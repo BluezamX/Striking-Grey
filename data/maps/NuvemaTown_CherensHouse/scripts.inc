@@ -30,8 +30,8 @@ NuvemaTown_CherensHouse_Text_Mother1:
 	.string "My grandson just arrived!\n"
 	.string "However, he only dropped by for tea,\l"
 	.string "and now he's waiting in the Lab.\p"
-	.string "Oh? You hadn't heard that Sivo\n"
-	.string "is leaving today as well?$"
+	.string "Oh? You hadn't heard that Sivo is\n"
+	.string "leaving today as well?$"
 
 NuvemaTown_CherensHouse_EventScript_Mother2::
 	goto_if_unset FLAG_CHEREN_MOM NuvemaTown_CherensHouse_EventScript_Mother3
@@ -62,7 +62,7 @@ NuvemaTown_CherensHouse_Text_Mother4:
 NuvemaTown_CherensHouse_EventScript_Upstairs::
 	lock
 	msgbox NuvemaTown_CherensHouse_Text_Upstairs, MSGBOX_DEFAULT
-	applymovement OBJ_EVENT_ID_PLAYER, NuvemaTown_CherensHouse_Movement_South
+	applymovement LOCALID_PLAYER, NuvemaTown_CherensHouse_Movement_South
 	release
 	end
 
