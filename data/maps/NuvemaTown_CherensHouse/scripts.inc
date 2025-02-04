@@ -4,7 +4,7 @@ NuvemaTown_CherensHouse_MapScripts::
 NuvemaTown_CherensHouse_EventScript_Father::
 	lock
 	faceplayer
-	msgbox NuvemaTown_BiancasHouse_Text_Father, MSGBOX_DEFAULT
+	msgbox NuvemaTown_CherensHouse_Text_Father, MSGBOX_DEFAULT
 	release
 	end
 
