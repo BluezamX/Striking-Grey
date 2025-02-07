@@ -235,7 +235,7 @@
 #define OBJ_EVENT_GFX_LEAF                       231
 #define OBJ_EVENT_GFX_DEOXYS                     232
 #define OBJ_EVENT_GFX_DEOXYS_TRIANGLE            233
-#define OBJ_EVENT_GFX_BRANDON                    234
+#define OBJ_EVENT_GFX_SIVO                       234
 #define OBJ_EVENT_GFX_LINK_RS_BRENDAN            235
 #define OBJ_EVENT_GFX_LINK_RS_MAY                236
 #define OBJ_EVENT_GFX_LUGIA                      237
@@ -368,7 +368,7 @@
 #define OBJ_EVENT_PAL_TAG_KYOGRE_REFLECTION       0x1117
 #define OBJ_EVENT_PAL_TAG_GROUDON                 0x1118
 #define OBJ_EVENT_PAL_TAG_GROUDON_REFLECTION      0x1119
-#define OBJ_EVENT_PAL_TAG_UNUSED                  0x111A
+#define OBJ_EVENT_PAL_TAG_SIVO                    0x111A
 #define OBJ_EVENT_PAL_TAG_SUBMARINE_SHADOW        0x111B
 #define OBJ_EVENT_PAL_TAG_POOCHYENA               0x111C
 #define OBJ_EVENT_PAL_TAG_RED_LEAF                0x111D

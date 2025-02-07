@@ -168,6 +168,7 @@ const u16 gObjectEventPal_Kyogre[] = INCBIN_U16("graphics/object_events/palettes
 const u16 gObjectEventPal_KyogreReflection[] = INCBIN_U16("graphics/object_events/palettes/kyogre_reflection.gbapal");
 const u16 gObjectEventPal_Groudon[] = INCBIN_U16("graphics/object_events/palettes/groudon.gbapal");
 const u16 gObjectEventPal_GroudonReflection[] = INCBIN_U16("graphics/object_events/palettes/groudon_reflection.gbapal");
+const u16 gObjectEventPal_Sivo[] = INCBIN_U16("graphics/object_events/palettes/sivo.gbapal");
 const u32 gObjectEventPic_UnusedNatuDoll[] = INCBIN_U32("graphics/object_events/pics/dolls/unused_natu_doll.4bpp");
 const u32 gObjectEventPic_UnusedMagnemiteDoll[] = INCBIN_U32("graphics/object_events/pics/dolls/unused_magnemite_doll.4bpp");
 const u32 gObjectEventPic_UnusedSquirtleDoll[] = INCBIN_U32("graphics/object_events/pics/dolls/unused_squirtle_doll.4bpp");
@@ -353,7 +354,7 @@ const u32 gObjectEventPic_Spenser[] = INCBIN_U32("graphics/object_events/pics/pe
 const u32 gObjectEventPic_Greta[] = INCBIN_U32("graphics/object_events/pics/people/frontier_brains/greta.4bpp");
 const u32 gObjectEventPic_Noland[] = INCBIN_U32("graphics/object_events/pics/people/frontier_brains/noland.4bpp");
 const u32 gObjectEventPic_Lucy[] = INCBIN_U32("graphics/object_events/pics/people/frontier_brains/lucy.4bpp");
-const u32 gObjectEventPic_Brandon[] = INCBIN_U32("graphics/object_events/pics/people/frontier_brains/brandon.4bpp");
+const u32 gObjectEventPic_Sivo[] = INCBIN_U32("graphics/object_events/pics/people/frontier_brains/sivo.4bpp");
 const u32 gObjectEventPic_PokeBall[] = INCBIN_U32("graphics/object_events/pics/misc/ball_poke.4bpp");
 
 const u32 gObjectEventPic_DeoxysOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/deoxys.4bpp");
@@ -413,8 +414,8 @@ const u32 gObjectEventPic_DreamBall[] = INCBIN_U32("graphics/object_events/pics/
 const u32 gObjectEventPic_BeastBall[] = INCBIN_U32("graphics/object_events/pics/misc/ball_beast.4bpp");
 #ifdef ITEM_STRANGE_BALL
 const u32 gObjectEventPic_StrangeBall[] = INCBIN_U32("graphics/object_events/pics/misc/ball_strange.4bpp");
-#endif //ITEM_STRANGE_BALL
-#endif //OW_FOLLOWERS_POKEBALLS
+#endif // ITEM_STRANGE_BALL
+#endif // OW_FOLLOWERS_POKEBALLS
 
 #if OW_FOLLOWERS_POKEBALLS
 // Palettes are small, so always include all of the palettes (no #ifdef)
@@ -452,5 +453,5 @@ const u16 gObjectEventPal_BeastBall[] = INCBIN_U16("graphics/object_events/pics/
 // Gen VIII
 #ifdef ITEM_STRANGE_BALL
 const u16 gObjectEventPal_StrangeBall[] = INCBIN_U16("graphics/object_events/pics/misc/ball_strange.gbapal");
-#endif //ITEM_STRANGE_BALL
-#endif //OW_FOLLOWERS_POKEBALLS
+#endif // ITEM_STRANGE_BALL
+#endif // OW_FOLLOWERS_POKEBALLS

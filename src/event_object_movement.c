@@ -498,6 +498,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_KyogreReflection,      OBJ_EVENT_PAL_TAG_KYOGRE_REFLECTION},
     {gObjectEventPal_Groudon,               OBJ_EVENT_PAL_TAG_GROUDON},
     {gObjectEventPal_GroudonReflection,     OBJ_EVENT_PAL_TAG_GROUDON_REFLECTION},
+    {gObjectEventPal_Sivo,                  OBJ_EVENT_PAL_TAG_SIVO},
     {gObjectEventPal_SubmarineShadow,       OBJ_EVENT_PAL_TAG_SUBMARINE_SHADOW},
     {gObjectEventPal_Poochyena,             OBJ_EVENT_PAL_TAG_POOCHYENA},
     {gObjectEventPal_RedLeaf,               OBJ_EVENT_PAL_TAG_RED_LEAF},
