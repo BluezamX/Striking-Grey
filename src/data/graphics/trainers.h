@@ -265,8 +265,8 @@ const u32 gTrainerPalette_FactoryHeadNoland[] = INCBIN_U32("graphics/trainers/fr
 const u32 gTrainerFrontPic_PikeQueenLucy[] = INCBIN_U32("graphics/trainers/front_pics/pike_queen_lucy.4bpp.lz");
 const u32 gTrainerPalette_PikeQueenLucy[] = INCBIN_U32("graphics/trainers/front_pics/pike_queen_lucy.gbapal.lz");
 
-const u32 gTrainerFrontPic_PyramidKingBrandon[] = INCBIN_U32("graphics/trainers/front_pics/pyramid_king_brandon.4bpp.lz");
-const u32 gTrainerPalette_PyramidKingBrandon[] = INCBIN_U32("graphics/trainers/front_pics/pyramid_king_brandon.gbapal.lz");
+const u32 gTrainerFrontPic_Sivo[] = INCBIN_U32("graphics/trainers/front_pics/sivo.4bpp.lz");
+const u32 gTrainerPalette_Sivo[] = INCBIN_U32("graphics/trainers/front_pics/sivo.gbapal.lz");
 
 const u32 gTrainerFrontPic_Red[] = INCBIN_U32("graphics/trainers/front_pics/red.4bpp.lz");
 const u32 gTrainerPalette_Red[] = INCBIN_U32("graphics/trainers/front_pics/red.gbapal.lz");
@@ -396,7 +396,7 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_ARENA_TYCOON_GRETA, gTrainerFrontPic_ArenaTycoonGreta, gTrainerPalette_ArenaTycoonGreta),
     TRAINER_SPRITE(TRAINER_PIC_FACTORY_HEAD_NOLAND, gTrainerFrontPic_FactoryHeadNoland, gTrainerPalette_FactoryHeadNoland),
     TRAINER_SPRITE(TRAINER_PIC_PIKE_QUEEN_LUCY, gTrainerFrontPic_PikeQueenLucy, gTrainerPalette_PikeQueenLucy),
-    TRAINER_SPRITE(TRAINER_PIC_PYRAMID_KING_BRANDON, gTrainerFrontPic_PyramidKingBrandon, gTrainerPalette_PyramidKingBrandon),
+    TRAINER_SPRITE(TRAINER_PIC_SIVO, gTrainerFrontPic_Sivo, gTrainerPalette_Sivo),
     TRAINER_SPRITE(TRAINER_PIC_RED, gTrainerFrontPic_Red, gTrainerPalette_Red),
     TRAINER_SPRITE(TRAINER_PIC_LEAF, gTrainerFrontPic_Leaf, gTrainerPalette_Leaf),
     TRAINER_SPRITE(TRAINER_PIC_RS_BRENDAN, gTrainerFrontPic_RubySapphireBrendan, gTrainerPalette_RubySapphireBrendan),

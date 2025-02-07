@@ -23733,7 +23733,7 @@ F_TRAINER_FEMALE |
 #line 9506
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 9507
-        .trainerPic = TRAINER_PIC_PYRAMID_KING_BRANDON,
+        .trainerPic = TRAINER_PIC_SIVO,
         .encounterMusic_gender = 
 #line 9509
             TRAINER_ENCOUNTER_MUSIC_MALE,
@@ -23873,7 +23873,7 @@ F_TRAINER_FEMALE |
 #line 9561
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 9562
-        .trainerPic = TRAINER_PIC_PYRAMID_KING_BRANDON,
+        .trainerPic = TRAINER_PIC_SIVO,
         .encounterMusic_gender = 
 #line 9564
             TRAINER_ENCOUNTER_MUSIC_MALE,
@@ -24013,7 +24013,7 @@ F_TRAINER_FEMALE |
 #line 9616
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 9617
-        .trainerPic = TRAINER_PIC_PYRAMID_KING_BRANDON,
+        .trainerPic = TRAINER_PIC_SIVO,
         .encounterMusic_gender = 
 #line 9619
             TRAINER_ENCOUNTER_MUSIC_MALE,
@@ -39890,7 +39890,7 @@ F_TRAINER_FEMALE |
 #line 15994
         .trainerClass = TRAINER_CLASS_PYRAMID_KING,
 #line 15995
-        .trainerPic = TRAINER_PIC_PYRAMID_KING_BRANDON,
+        .trainerPic = TRAINER_PIC_SIVO,
         .encounterMusic_gender = 
 #line 15997
             TRAINER_ENCOUNTER_MUSIC_MALE,
