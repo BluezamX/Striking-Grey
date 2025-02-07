@@ -9504,7 +9504,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 === TRAINER_SIVO_NUVEMATOWN_LAB_OSHAWOTT ===
 Name: Sivo
 Class: Rival
-Pic: Pyramid King Brandon
+Pic: Sivo
 Gender: Male
 Music: Male
 Double Battle: No
@@ -9559,7 +9559,7 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 === TRAINER_SIVO_NUVEMATOWN_LAB_SNIVY ===
 Name: Sivo
 Class: Rival
-Pic: Pyramid King Brandon
+Pic: Sivo
 Gender: Male
 Music: Male
 Double Battle: No
@@ -9614,7 +9614,7 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 === TRAINER_SIVO_NUVEMATOWN_LAB_TEPIG ===
 Name: Sivo
 Class: Rival
-Pic: Pyramid King Brandon
+Pic: Sivo
 Gender: Male
 Music: Male
 Double Battle: No
@@ -15992,7 +15992,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_BRANDON ===
 Name: BRANDON
 Class: Pyramid King
-Pic: Pyramid King Brandon
+Pic: Sivo
 Gender: Male
 Music: Male
 Double Battle: No
