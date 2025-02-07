@@ -660,7 +660,7 @@ static const u16 sReflectionPaletteTags_RedLeaf[] = {
 static const struct PairedPalettes sSpecialObjectReflectionPaletteSets[] = {
     {OBJ_EVENT_PAL_TAG_BRENDAN, sReflectionPaletteTags_Brendan},
     {OBJ_EVENT_PAL_TAG_MAY, sReflectionPaletteTags_May},
-    {OBJ_EVENT_PAL_TAG_QUINTY_PLUMP, sReflectionPaletteTags_QuintyPlump},
+    {OBJ_EVENT_PAL_TAG_PROF_BIANCA, sReflectionPaletteTags_QuintyPlump},
     {OBJ_EVENT_PAL_TAG_TRUCK, sReflectionPaletteTags_Truck},
     {OBJ_EVENT_PAL_TAG_VIGOROTH, sReflectionPaletteTags_VigorothMover},
     {OBJ_EVENT_PAL_TAG_MOVING_BOX, sReflectionPaletteTags_MovingBox},
